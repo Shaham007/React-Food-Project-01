@@ -1,0 +1,121 @@
+
+.home {
+    width: 100%;
+    height: 88vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .headerContainer {
+    width: auto;
+    margin-left: 50px;
+  }
+  
+  .headerContainer h1 {
+    font-size: 80px;
+    height: 60px;
+    font-weight: 50;
+    color: black;
+    font-weight: bold;
+    position: absolute;
+    top: 80px;
+    left: 20px;
+    letter-spacing: 10px;
+    cursor: pointer;
+    transition: all .7s;
+  }
+
+  .headerContainer h1::before {
+    content: 'FoodCorner';
+    color: #f04933;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    overflow: hidden;
+    transition: all .7s;
+  }
+  
+  .headerContainer h1:hover::before {
+    width: 100%;
+  }
+  
+
+  .headerContainer p {
+    padding: 0;
+    font-size: 40px;
+    color: black;
+    position: absolute;
+    top: 290px;
+    left: 120px;
+  }
+
+
+  
+  .headerContainer button {
+    color: black;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    background-color: black;
+    height: 50px;
+    width: 180px;
+    color: #d85847;
+    border-color: #f04933;
+    border: 1px;
+    text-decoration: none;
+    font-size: 15px;
+    position: absolute;
+    left: 145px;
+    top: 460px;
+  }
+  
+  .headerContainer button:hover {
+    background-color: #f04933;
+    color: white;
+    transition: 0.4s ease-in;
+    width: 200px;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    .home {
+      justify-content: center;
+      align-items: center;
+    }
+
+  
+  
+  
+    .headerContainer h1 {
+      font-size: 50px;
+      height: 30px;
+      color: black;
+    }
+  
+    .headerContainer p {
+      font-size: 30px;
+      color: black;
+      position: absolute;
+      top: 250px;
+      
+    }
+  
+    .headerContainer button {
+      color: red;
+      margin-bottom: 30px;
+      transition: 0.8s ease;
+      position: static;
+    }
+  
+    .headerContainer button:hover {
+      background-color: rgb(225, 225, 225);
+      color: #121619;
+    }
+  }
+  
