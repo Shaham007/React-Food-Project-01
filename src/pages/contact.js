@@ -5,8 +5,7 @@ import "../styles/contact.css";
 function Contact() {
     return (
         <div className="contact">
-            <div
-                className="leftSide" style={{ backgroundImage: `url(${PizzaLeft})` }}></div>
+            <div className="leftSide" style={{ backgroundImage: `url(${PizzaLeft})` }}></div>
             <div className="rightSide">
                 <h1> Contact Us</h1>
 
